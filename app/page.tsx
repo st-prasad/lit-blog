@@ -16,9 +16,10 @@ export default function Home() {
   const postMetaData = getPostMetaData(); 
   const postPreviews = postMetaData.map((slug) => { //mapping the slugs to the posts
     return (
-      <div key={slug}>
+      <div key={slug} className="mb-4">
         <Link href={`/posts/${slug}` } >
-        <h1>{slug}</h1>
+          {/* post title */}
+        <h1 className="text-white text-2xl hover:underline cursor-pointer">{slug}</h1>
         </Link>
       </div>
     )
@@ -26,6 +27,6 @@ export default function Home() {
   
 
   return (
-    <div>{postPreviews}</div>
+    <div className='p-4'>{postPreviews}</div>
   )
 }
