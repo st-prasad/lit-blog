@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +24,64 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+/* 
+.group:hover .animate-hoverGlow {
+  animation: hoverGlow 1.5s ease-in-out forwards;
+  transition: all 0.3s ease-in-out;
+  transform: translate3d(0, 0, 0);
+} */
+
+
+@layer utilities {
+  @keyframes rotate {
+    0% {
+      transform: rotateY(0deg);
+    }
+    25% {
+      transform: rotateY(90deg);
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+    75% {
+      transform: rotateY(270deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  .group:hover .rotate-animation {
+    animation: rotate 10s linear infinite;
+  }
+
+  @keyframes hoverGlow {
+    0% {
+      box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+    100% {
+      /* box-shadow: 0 0 20px rgba(0, 0, 255, 0.5); */
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.945);
+  
+    }
+  }
+  
+  /* .group:hover .animate-hoverGlow {
+    animation: hoverGlow 1s infinite;
+  }  */
+  .group:hover .animate-hoverGlow {
+    border-radius: 50%;
+    animation: hoverGlow 1s forwards;
+  } 
+}
+
+@layer components {
+  /* .navLinks > .navLink {
+    margin: 0 10px;
+  } */
+  /* add text color blue to link components inside the div with the navlinks class using tailwind*/
+  .navLinks > .navLink {
+    @apply mx-3 text-cyan-100 hover:text-white shadow-md;
+  }
 }

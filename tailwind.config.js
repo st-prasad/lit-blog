@@ -14,5 +14,15 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  // variants: {
+  //   extend: {
+  //     animation: ['group-hover'], // Add this line to enable group-hover for animations
+  //     textColor: ['group-hover'], 
+  //   },
+  // },
+  plugins: [require('@tailwindcss/typography'),
+  ],
 }
+
+
+
