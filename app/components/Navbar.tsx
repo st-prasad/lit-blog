@@ -9,7 +9,7 @@ const Navbar = (props: Props) => {
         <nav className="sticky top-0 z-10 drop-shadow-xl flex items-center justify-between flex-wrap bg-gradient-to-r from-indigo-950 to-cyan-600 p-6 text-lg lg:text-xl max-w-screen-xl mx-auto">
 
 
-            <div className="flex text-white mr-6 group">
+            <div className="flex text-white mr-6 group-rotate">
                 <span className="font-semibold text-2xl tracking-tight rotate-animation">lit-blog</span>
             </div>
             {/* <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto prose prose-xl"> */}
@@ -20,16 +20,16 @@ const Navbar = (props: Props) => {
                         fill />
                 </div> */}
 
-                <Link href="#responsive-header" className=" navLink group">
+                <Link href="#responsive-header" className=" navLink group-glow">
                     <span className="animate-hoverGlow">Home</span>
                 </Link>
-                <Link href="#responsive-header" className="navLink group">
+                <Link href="#responsive-header" className="navLink group-glow">
                     <span className="animate-hoverGlow">Blog</span>
                 </Link>
-                <Link href="#responsive-header" className="navLink group">
+                <Link href="#responsive-header" className="navLink group-glow">
                     <span className="animate-hoverGlow">About</span>
                 </Link>
-                <Link href="#responsive-header" className="navLink group">
+                <Link href="#responsive-header" className="navLink group-glow">
                     <span className="animate-hoverGlow">Contact</span>
                 </Link>
                 <div className='navLink mx-3'>

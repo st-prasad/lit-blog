@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import ProfileImage from './components/ProfileImage'
@@ -19,6 +20,7 @@ export default function RootLayout({
         <Navbar />
         <ProfileImage />
         <Hero />
+        {/* all the children of app directory  */}
         {children}
       </body>
     </html>

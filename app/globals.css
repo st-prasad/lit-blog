@@ -2,36 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  h1 {
+    @apply text-4xl font-bold text-gray-900;
   }
+
+  h2 {
+    @apply text-3xl font-bold text-gray-800;
+  }
+
+  h3 {
+    @apply text-2xl font-bold text-gray-700;
+  }
+
+  h4 {
+    @apply text-xl font-bold text-gray-600;
+  }
+
+  h5 {
+    @apply text-lg font-semibold text-gray-500;
+  }
+
+  h6 {
+    @apply text-base font-semibold text-gray-400;
+  }
+
+  p {
+    @apply text-base text-gray-700;
+  }
+
+  a {
+    @apply text-blue-500 underline;
+  }
+
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
-
-/* 
-.group:hover .animate-hoverGlow {
-  animation: hoverGlow 1.5s ease-in-out forwards;
-  transition: all 0.3s ease-in-out;
-  transform: translate3d(0, 0, 0);
-} */
 
 
 @layer utilities {
@@ -52,7 +56,7 @@ body {
       transform: rotateY(360deg);
     }
   }
-  .group:hover .rotate-animation {
+  .group-rotate:hover .rotate-animation {
     animation: rotate 10s linear infinite;
   }
 
@@ -70,7 +74,7 @@ body {
   /* .group:hover .animate-hoverGlow {
     animation: hoverGlow 1s infinite;
   }  */
-  .group:hover .animate-hoverGlow {
+  .group-glow:hover .animate-hoverGlow {
     border-radius: 50%;
     animation: hoverGlow 1s forwards;
   } 
