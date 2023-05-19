@@ -1,4 +1,4 @@
-export interface PostMetaData {
+export interface PostMetaDataType {
     title: string;
     date: string;
     // tags: string[];
