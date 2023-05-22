@@ -89,3 +89,15 @@
     @apply mx-3 text-cyan-100 hover:text-white shadow-md;
   }
 }
+
+body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+/* #postsPage * {
+  @apply text-amber-400 prose;
+} */
+
+#postsPage .markdown {
+  @apply prose;
+}

@@ -1,6 +1,5 @@
-import getPostMetaData from "@/logicComp/GetPostMetadata";
-import fs from "fs";
-import matter from "gray-matter";
+import { getParsedMatter } from "@/logicComp/getParsedMatter";
+import getPostMetaData from "@/logicComp/getPostMetadata";
 import Link from "next/link";
 import ReactMarkdown from 'react-markdown';
 
@@ -21,12 +20,9 @@ interface PageProps {
 // };
 
 const getPostContent = (slug: string) => {
-  // const folder = "blogPosts/";
-  const file = `blogPosts/${slug}.md`;
-  const content = fs.readFileSync(file, "utf8");
-  // return content;
-  const matterData = matter(content);
-  return matterData;
+  const filePath = `blogPosts/${slug}.md`;
+  const parsedMatter = getParsedMatter(filePath);
+  return parsedMatter;
 }
 
 export async function generateStaticParams() {
@@ -41,11 +37,11 @@ const PostsPage = (props: PageProps) => {
   const slug = props.params.slug;
   const postContent = getPostContent(slug);
   return (
-    <div>
+    <div id="postsPage">
       <Link href="/">HOME</Link>
-      <h1 className="text-orange-300">testin page title - {postContent.data.title}</h1>
-      <h1 className="text-orange-300">testin page - {slug}</h1>
-      <ReactMarkdown>{postContent.content}</ReactMarkdown>
+      <h1 className="text-orange-300">{postContent.data.title}</h1>
+      {/* <h1 className="text-orange-300">testin page - {slug}</h1> */}
+      <ReactMarkdown className="markdown text-amber-400 bg-slate-500 font-merriweatherfont text-lg leading-relaxed my-6 mx-auto max-w-2xl">{postContent.content}</ReactMarkdown>
     </div>
   )
 }
