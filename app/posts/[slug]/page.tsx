@@ -41,7 +41,10 @@ const PostsPage = (props: PageProps) => {
       <Link href="/">HOME</Link>
       <h1 className="text-orange-300">{postContent.data.title}</h1>
       {/* <h1 className="text-orange-300">testin page - {slug}</h1> */}
+      <article className="prose prose-invert lg:prose-xl prose-yellow">
       <ReactMarkdown className="markdown text-amber-400 bg-slate-500 font-merriweatherfont text-lg leading-relaxed my-6 mx-auto max-w-2xl">{postContent.content}</ReactMarkdown>
+      {/* <ReactMarkdown className="markdown text-amber-400 bg-slate-500 font-merriweatherfont text-lg leading-relaxed my-6 mx-auto max-w-2xl">{postContent.content}</ReactMarkdown> */}
+      </article>
     </div>
   )
 }

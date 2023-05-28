@@ -1,11 +1,10 @@
 import React from 'react'
 import PostsTable from './components/PostsTable'
 
-type Props = {}
 
-const HomePage = (props: Props) => {
+const HomePage = () => {
   return (
-    <div>
+    <div className='homePage baseStyles'>
       <PostsTable />
     </div>
   )
