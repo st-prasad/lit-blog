@@ -1,9 +1,13 @@
 ---
 title: "LLM (Large Language Models) for Whiteboards"
 date: "2023-05-16"
+image: "/images/download.png"
 ---
 
 # LLM (Large Language Models) for **Whiteboards**
+
+![Placeholder Image](/images/download.png "This is a placeholder image")
+
 
 LLMs, or **Large Language Models**, have the potential to revolutionize many fields, including digital whiteboards. These AI models can generate _human-like text_, making them useful for a variety of tasks.
 

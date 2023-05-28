@@ -3,7 +3,7 @@ export interface PostMetaDataType {
     date: string;
     // tags: string[];
     // description: string;
-    // image: string;
+    image?: string; // Image is string or undefined 
     slug: string;
     subtitle: string;
 }

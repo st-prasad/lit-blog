@@ -1,11 +1,11 @@
 import React from 'react'
-import PostsTable from './components/PostsTable'
+import PostElementsTable from './components/PostElementsTable'
 
 
 const HomePage = () => {
   return (
     <div className='homePage baseStyles'>
-      <PostsTable />
+      <PostElementsTable />
     </div>
   )
 }

@@ -22,6 +22,7 @@ const getPostMetaData = (): PostMetaDataType[] => { //function to get the metada
             // description: matterData.data.description,
             date: matterData.date,
             subtitle: matterData.subtitle,
+            image: matterData.image, //could be undefined
             slug: fileName.replace(".md", ""),
         };
     });
