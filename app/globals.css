@@ -48,7 +48,7 @@
 
   .grid-custom {
     display: grid;
-    grid-template-rows: 100px 300px 100px 100px auto;
+    grid-template-rows: 10px 300px 100px 100px auto;
     /* height: 100vh; */
     /* align-items: center; */
   }
@@ -59,23 +59,54 @@
 
   .slick-list {
     margin-right: -30px;
-    max-width: 100%;
+    /* max-width: 100%; */
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40vh;
   }
+  .slick-track, .slick-slide, .slick-slide>div, .slick-slide>div>div {
+    height: 100%;
+  }
+
   .slick-slide>div {
     margin: 0 30px;
+  }
+  .slick-slide>div>#post-element {
+    display: grid;
   }
   .slick-slide>div:nth-child(1) {
     margin-left: 10px;
   }
-  .slick-slider>.slick-next {
 
-    right: 20px;
-    z-index: 1;
-  }
-  .slick-slider>.slick-prev {
+  /* .slick-slider>.slick-prev {
     left: 20px;
     z-index: 1;
+  } */
+  .slick-slider .prevArrow,
+.slick-slider .nextArrow {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    width: 100px;
+    border-radius: 40%;
+    text-align: center;
+    /* margin: 0 auto; */
+    color: black;
+    font-weight: bold;
+    top: 50%;
+    transform: translateY(-50%);
+    border: black;
+    border: solid;
   }
+
+  .slick-slider .nextArrow {
+    right: 20px;
+  }
+  .slick-slider .prevArrow {
+    left: 20px;
+  }
+
 
 
 

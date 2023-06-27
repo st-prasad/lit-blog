@@ -26,7 +26,7 @@ const PostElementsTable = () => {
 
   return (
     // <div id="postsTable" className='flex m-10 p-1 w-[80vw] h-full overflow-x-auto gap-2 border border-solid border-white my-0 mx-auto'>
-    <div id="postsTable">
+    <div id="postelementsTable">
       {/* <Slider {...settings}> */}
     {/* <div id="postsTable" className='grid m-10 p-1 grid-rows-1 gap-2 border border-solid border-white overflow-x-auto'> */}
       {/* <div className='m-2 p-4 border border-solid border-white'> */}
