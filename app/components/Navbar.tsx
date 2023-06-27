@@ -6,7 +6,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
     return (
-        <nav className="fixed w-full max-w-screen-md left-0 right-0 mx-auto baseStyles top-0 z-10 drop-shadow-xl flex items-center justify-between flex-wrap bg-gradient-to-r from-indigo-950 to-cyan-600 p-6 text-lg lg:text-xl">
+        <nav className="fixed w-full max-w-screen-md left-0 right-0 mx-auto baseStyles top-0 z-50 drop-shadow-xl flex items-center justify-between flex-wrap bg-gradient-to-r from-indigo-950 to-[#3E8DE3] p-6 text-lg lg:text-xl">
 
 
             <div className="flex text-gray-100 mr-6 group-rotate">

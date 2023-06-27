@@ -1,5 +1,5 @@
 ---
-title: "LLM (Large Language Models) for Whiteboards"
+title: "LLM (Large Language "
 subtitle: "iusohgushg."
 date: "2023-05-16"
 image: "/images/download.png"
@@ -24,5 +24,3 @@ For instance, an LLM could:
 Link to more information: [OpenAI](https://www.openai.com)
 
 ## Conclusion
-
-The application of LLMs in digital whiteboards represents an exciting avenue for the use of AI. As LLMs continue to improve, they will undoubtedly play a larger role in digital collaboration tools like whiteboards.
