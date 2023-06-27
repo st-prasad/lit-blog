@@ -7,7 +7,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
     return (
-        <section id='HeroSection' className="text-center flex flex-row pt-[10vh] h-[50vh]">
+        <section id='HeroSection' className="text-center flex flex-row pt-[10vh] h-[60vh]">
 
             <div className='relative basis-2/5 lg:basis-1/5'>
                 <AnimatedImage />

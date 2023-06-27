@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useInView } from 'react-intersection-observer';
 import AnimatedImage from './components/AnimatedImage';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
@@ -6,6 +7,7 @@ import Navbar from './components/Navbar';
 import ProfileImage from './components/ProfileImage';
 import Trending from './components/Trending';
 import './globals.css';
+
 
 export const metadata = {
   title: 'my ai blog',

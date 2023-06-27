@@ -1,5 +1,5 @@
-import { PostMetaDataType } from "@/logicComp/Interfaces";
 import getPostMetaData from "@/logicComp/getPostMetadata";
+import { PostMetaDataType } from "@/logicComp/interfaces";
 // import { useEffect, useRef } from "react";
 // import Slider from "react-slick";
 //needed @types/react-slick package because above module implicitly has an 'any' type. 

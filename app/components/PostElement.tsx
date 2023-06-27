@@ -1,4 +1,4 @@
-import { PostMetaDataType } from '@/logicComp/Interfaces'
+import { PostMetaDataType } from '@/logicComp/interfaces'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'

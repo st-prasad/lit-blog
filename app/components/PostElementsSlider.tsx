@@ -3,6 +3,19 @@ import React from 'react';
 import Slider from "react-slick";
 // needed @types/react-slick package because above module implicitly has an 'any' type. 
 
+type ArrowProps = {
+  className?: string,
+  style?: React.CSSProperties,
+  onClick?: () => void,
+}
+
+const NextArrow = (props: ArrowProps) => (
+  <div className="nextArrow" onClick={props.onClick}>Next</div>
+);
+
+const PrevArrow = ( props: ArrowProps ) => (
+  <div className="prevArrow" onClick={props.onClick}>Prev</div>
+);
 
 const PostElementsSlider = ({ PostElements }: { PostElements: JSX.Element[] }) => {
 
@@ -20,8 +33,8 @@ const PostElementsSlider = ({ PostElements }: { PostElements: JSX.Element[] }) =
         slidesToScroll: 1,
         // centerPadding: "0px",
         //arrows are absolutely positioned in slick, so we need to add a wrapper div to position them relative to the slider div.
-        nextArrow: <div>Next</div>,
-        prevArrow: <div>Prev</div>,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
         responsive: [
           {
             breakpoint: 1280,

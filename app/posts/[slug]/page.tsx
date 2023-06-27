@@ -3,7 +3,7 @@ import getPostMetaData from "@/logicComp/getPostMetadata";
 import Link from "next/link";
 import ReactMarkdown from 'react-markdown';
 
-//Interfaces in TypeScript are a way to define custom types. 
+//interfaces in TypeScript are a way to define custom types. 
 //An interface defines the shape of an object, specifying what properties the object should have and what type those properties should be.
 
 //PageProps interface describes the shape of an object that has one property: params.

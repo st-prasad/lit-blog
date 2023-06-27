@@ -1,6 +1,6 @@
 import fs from 'fs'; //importing fs module from node.js to read files from the file system
-import { PostMetaDataType } from './Interfaces';
 import { getParsedMatter } from './getParsedMatter';
+import { PostMetaDataType } from './interfaces';
 
 //after running markdown through gray-matter, you would get an object with a data property containing the metadata (the front matter), and a content property containing the rest of the markdown file.
 
