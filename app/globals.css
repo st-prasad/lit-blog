@@ -47,8 +47,9 @@
   }
 
   .grid-custom {
-    display: grid;
-    grid-template-rows: 10px 300px 100px 100px auto;
+    /* without !important, display defaults to inline-block, due to react-slick library */
+    display: grid !important; 
+    grid-template-rows: 10vh 20vh 5vh 5vh auto;
     /* height: 100vh; */
     /* align-items: center; */
   }
@@ -63,7 +64,7 @@
     max-width: 90vw;
     margin-left: auto;
     margin-right: auto;
-    height: 40vh;
+    height: 50vh;
   }
   .slick-track, .slick-slide, .slick-slide>div, .slick-slide>div>div {
     height: 100%;
@@ -98,6 +99,7 @@
     transform: translateY(-50%);
     border: black;
     border: solid;
+    transition: background-color 0.3s ease;
   }
 
   .slick-slider .nextArrow {
@@ -107,8 +109,21 @@
     left: 20px;
   }
 
+  .slick-slider .nextArrow:hover,
+.slick-slider .prevArrow:hover {
+  background-color: #cccccc;
+}
 
+.slick-slider .nextArrow:active,
+.slick-slider .prevArrow:active {
+  background-color: #999999;
+}
 
+.slick-slider .slick-dots {
+  height: 4vh;
+  background-color: rgb(167, 167, 167);
+
+}
 
 @layer utilities {
   @keyframes rotate {

@@ -12,7 +12,7 @@ import React from 'react'
 
 const PostElement = (props: PostMetaDataType) => {
     return (
-        <div id='post-element' className="grid-custom pt-4 bg-[#3e8de3] min-w-[300px] text-white justify-items-center opacity-70 hover:opacity-100 transition-opacity duration-200">
+        <div id='post-element' className="grid-custom pt-4 bg-[#3e8de3] min-w-[300px] text-white justify-items-center opacity-80 hover:opacity-100 transition-opacity duration-500">
             {/* <div className="post-element pt-4 bg-cyan-800 min-w-[300px] grid grid-flow-row auto-rows-max"> */}
 
             <div className='self-start'>
@@ -21,7 +21,7 @@ const PostElement = (props: PostMetaDataType) => {
                 </Link>
             </div>
             <div className='self-center'>
-                {(props.image === undefined) ? <Image src="/images/pholder.jpg" alt="placeholder image" width={50} height={50} /> : <Image src={props.image} alt={`Cover Image for ${props.title}`} width={50} height={50} />}
+                {(props.image === undefined) ? <Image src="/images/pholder.jpg" alt="placeholder image" width={50} height={50} /> : <Image src={props.image} alt={`Image for ${props.title}`} width={50} height={50} />}
             </div>
             <div className='self-center'>
                 <p className=' h-10 text-white'>{props.subtitle}</p>

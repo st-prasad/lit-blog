@@ -2,9 +2,13 @@
 title: "Cultivating Solutions: The Role of Developers in Agricultural Advancement"
 subtitle: "How software developers can contribute to agricultural advancements in poor countries."
 date: "2023-05-12"
+image: "/images/aiAgri.jpg"
 ---
 
 In our interconnected world, the importance of bridging various sectors with technology has never been more evident. One such intersection, often overlooked, is the role of software developers in the agricultural field, particularly in economically disadvantaged areas like Sri Lanka.
+
+![image of a agriculture field](/images/aiAgri.jpg)
+
 
 ## The Developer's Role
 
