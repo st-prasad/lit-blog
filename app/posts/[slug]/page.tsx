@@ -37,11 +37,11 @@ const PostsPage = (props: PageProps) => {
   const slug = props.params.slug;
   const postContent = getPostContent(slug);
   return (
-    <div id="postsPage">
+    <div id="postsPage" className="p-[2vw] text-center">
       <Link href="/">HOME</Link>
       <h1 className="text-orange-300">{postContent.data.title}</h1>
       {/* <h1 className="text-orange-300">testin page - {slug}</h1> */}
-      <article className="prose prose-invert lg:prose-xl prose-yellow">
+      <article className="prose prose-invert lg:prose-xl prose-yellow my-0 mx-auto">
       <ReactMarkdown className="markdown text-amber-400 bg-slate-500 font-merriweatherfont text-lg leading-relaxed my-6 mx-auto max-w-2xl">{postContent.content}</ReactMarkdown>
       {/* <ReactMarkdown className="markdown text-amber-400 bg-slate-500 font-merriweatherfont text-lg leading-relaxed my-6 mx-auto max-w-2xl">{postContent.content}</ReactMarkdown> */}
       </article>

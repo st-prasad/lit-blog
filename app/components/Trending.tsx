@@ -25,13 +25,16 @@ const Trending = () => {
     // }, [])
 
     return (
-        <div id='trending' className="flex justify-around items-center p-20 gap-[2vw] bg-[#abc3cd] h-screen">
+        <div id='trending' className="flex flex-col sm:flex-row justify-around items-center p-20 gap-[2vw] bg-[#abc3cd] h-auto">
 
-            <div className="basis-1/3 bg-blue-950 min-w-[150px] max-w-[300px] rounded-lg shadow-lg w-full md:w-1/2 transform duration-500 hover:translate-x-5 hover:-translate-y-5 pointer-events-none relative z-10">
-                <Image className="w-full rounded-lg shadow-lg transform duration-500 hover:-translate-x-10 hover:translate-y-10 pointer-events-auto my-0 mx-auto"
+            {/* <div className="basis-1/3 bg-blue-950 min-w-[150px] max-w-[300px] rounded-lg shadow-lg w-full md:w-1/2 transform duration-500 hover:translate-x-5 hover:-translate-y-5 pointer-events-none relative z-10"> */}
+            <div className=" bg-blue-950 rounded-lg shadow-lg flex-[0_2_auto] transform duration-500 hover:translate-x-5 hover:-translate-y-5 pointer-events-none relative z-10 min-h-[150px] min-w-[150px]">
+
+                <Image className="rounded-lg shadow-lg transform duration-500 hover:-translate-x-10 hover:translate-y-10 pointer-events-auto my-0 mx-auto"
+                // <Image className="w-full rounded-lg shadow-lg transform duration-500 hover:-translate-x-10 hover:translate-y-10 pointer-events-auto my-0 mx-auto"
                     src='/images/aiimage.jpg'
-                    width={400}
-                    height={400}
+                    width={250}
+                    height={250}
                     alt='my profile pic'
                     priority={true}>
                 </Image>
@@ -49,8 +52,8 @@ const Trending = () => {
                     <li>openai</li>
                 </ul>
             </div> */}
-            {/* rewrite above comented div and add appropriate styles */}
-            <div className="text-center basis-2/3 md:text-left relative z-20">
+
+            <div className="flex-[0_1_400px] text-center md:text-left relative z-20">
             {/* <div className="text-center basis-2/3 md:text-left relative z-20"> */}
                 <h1 className="text-4xl font-bold text-[#143aa2]">Top 5 trending AI technologies this month</h1>
                 {/* <ul className="text-2xl font-semibold text-[#04060D]"> */}
